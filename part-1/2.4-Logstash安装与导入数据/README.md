@@ -19,10 +19,15 @@ input {
 }
 
 #启动Elasticsearch实例，然后启动 logstash，并制定配置文件导入数据
-bin/logstash -f /YOUR_PATH_of_logstash.conf
+sudo  bin/logstash -f /YOUR_PATH_of_logstash.conf
 
 ```
 ## 相关阅读
 - 下载最MovieLens最小测试数据集：https://grouplens.org/datasets/movielens/
 - Logstash下载：https://www.elastic.co/cn/downloads/logstash
 - Logstash参考文档：https://www.elastic.co/guide/en/logstash/current/index.html
+
+
+作者回复: logstash也可以集成进docker，讲课为了保持简洁，所以没有涵盖logstash的配置。如果你有兴趣 可以参考github这个项目
+
+https://github.com/deviantony/docker-elk
