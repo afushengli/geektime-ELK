@@ -35,7 +35,8 @@ GET users/_doc/1
 #Update 指定 ID  (先删除，在写入)
 GET users/_doc/1
 
-PUT users/_doc/1
+#指定 ID 如果已经存在，把旧文档删除，新文档写入，版本号加一，不存在; 指定 ID 不存在，相当于添加
+PUT users/_doc/1      
 {
 	"user" : "Mike"
 
@@ -43,7 +44,7 @@ PUT users/_doc/1
 
 
 #GET users/_doc/1
-#在原文档上增加字段
+#在原文档上增加字段  Update 指定 ID  (先删除，在写入)，但是版本号加1
 POST users/_update/1/
 {
     "doc":{

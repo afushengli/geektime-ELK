@@ -11,7 +11,7 @@ bin/elasticsearch-plugin install analysis-icu
 bin/elasticsearch-plugin list
 #查看安装的插件
 GET http://localhost:9200/_cat/plugins?v
-
+/Users/a123/Documents/geektime-ELK/part-1/2.4-Logstash安装与导入数据/movielens/logstash.conf
 #start multi-nodes Cluster
 bin/elasticsearch -E node.name=node0 -E cluster.name=geektime -E path.data=node0_data
 bin/elasticsearch -E node.name=node1 -E cluster.name=geektime -E path.data=node1_data
@@ -30,6 +30,6 @@ GET _cluster/health
 - Elastic Support Matrix(OS / JDK ) https://www.elastic.co/cn/support/matrix
 - Elasticsearch 的一些重要配置 https://www.elastic.co/guide/en/elasticsearch/reference/current/important-settings.html
 - https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html
-- https://www.elastic.co/guide/en/elasticsearch/reference/current/important-settings.html
+- https://www.elastic.c/Users/a123/Documents/geektime-ELK/part-1/2.4-Logstash安装与导入数据/movielens/logstash.confo/guide/en/elasticsearch/reference/current/important-settings.html
 - Elasticsearch on Kuvernetes https://www.elastic.co/cn/blog/introducing-elastic-cloud-on-kubernetes-the-elasticsearch-operator-and-beyond
 - CAT Plugins API https://www.elastic.co/guide/en/elasticsearch/reference/7.1/cat-plugins.html

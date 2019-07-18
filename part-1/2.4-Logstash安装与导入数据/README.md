@@ -22,6 +22,8 @@ input {
 sudo  bin/logstash -f /YOUR_PATH_of_logstash.conf
 
 ```
+
+本次做的操作是，在本机 安装的  logstash 向docker容器中的elaticsearch 中导入的数据
 ## 相关阅读
 - 下载最MovieLens最小测试数据集：https://grouplens.org/datasets/movielens/
 - Logstash下载：https://www.elastic.co/cn/downloads/logstash
